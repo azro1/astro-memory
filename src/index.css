@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  text-align: center;
+  background: #1b1523;
+  color: #fff;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+}
