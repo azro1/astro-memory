@@ -8,3 +8,14 @@
     border: 2px solid #fff;
     border-radius: 6px;
   }
+
+  /* no flipped class then we show the back by rotating 90deg */
+  .card .front {
+    transform: rotateY(90deg);
+    position: absolute;
+  }
+
+  /* flipped then we rotate front back to original position */
+  .flipped .front {
+    transform: rotateY(0deg);
+  }

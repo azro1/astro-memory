@@ -52,13 +52,12 @@ function App() {
         })
         resetTurn()
       } else {
-        
-        resetTurn()
+        // wait for a second before calling resetTurn to hide unmatched cards
+        setTimeout(() => resetTurn(), 1000)
       }
     } 
   }, [choiceOne, choiceTwo])
 
-  console.log(cards)
 
   // reset choices and increase turn
   const resetTurn = () => {
@@ -67,17 +66,25 @@ function App() {
     setTurns(prevTurns => prevTurns + 1)
   }
 
-  return (
-    <div className="App">
-      <h1>Astro Match</h1>
-      <button onClick={shufffleCards} >New Game</button> 
+  // console.log(turns)
 
-      {showTimer && <Timer seconds={60} />}
-      
-      <div className="card-grid">
-          {cards.map((card) => (
-            <SingleCard card={card} handleChoice={handleChoice} key={card.id} />
-          ))}
+
+  return (
+    <div className='App'>
+      <h1>Astro Match</h1>
+      <button onClick={shufffleCards}>New Game</button>
+
+      {showTimer && <Timer seconds={40} />}
+
+      <div className='card-grid'>
+        {cards.map((card) => (
+          <SingleCard
+            card={card}
+            handleChoice={handleChoice}
+            flipped={card === choiceOne || card === choiceTwo || card.matched}
+            key={card.id}
+          />
+        ))}
       </div>
     </div>
   );
