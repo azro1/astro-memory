@@ -4,12 +4,12 @@ import SingleCard from './components/SingleCard';
 import Timer from './components/Timer';
 
 const cardImages = [
-  { src: '/images/astro1.png' },
-  { src: '/images/astro2.png' },
-  { src: '/images/astro3.png' },
-  { src: '/images/astro4.png' },
-  { src: '/images/astro5.png' },
-  { src: '/images/astro6.png' },
+  { src: '/images/astro1.png', matched: false },
+  { src: '/images/astro2.png', matched: false },
+  { src: '/images/astro3.png', matched: false },
+  { src: '/images/astro4.png', matched: false },
+  { src: '/images/astro5.png', matched: false },
+  { src: '/images/astro6.png', matched: false },
 ];
 
 function App() {
@@ -39,15 +39,26 @@ function App() {
   // comparing choices using useEffect
   useEffect(() => {
     if (choiceOne && choiceTwo) {
+
       if (choiceOne.src === choiceTwo.src) {
-        console.log('those cards match')
+        setCards(prevCards => {
+          return prevCards.map((card) => {
+            if (card.src === choiceOne.src) {
+              return {...card, matched: true}
+            } else {
+              return card
+            }
+          })
+        })
         resetTurn()
       } else {
-        console.log('those cards do not match')
+        
         resetTurn()
       }
     } 
   }, [choiceOne, choiceTwo])
+
+  console.log(cards)
 
   // reset choices and increase turn
   const resetTurn = () => {
