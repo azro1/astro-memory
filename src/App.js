@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import SingleCard from './components/SingleCard';
+import Timer from './components/Timer';
 
 const cardImages = [
   { src: '/images/astro1.png' },
@@ -13,7 +14,10 @@ const cardImages = [
 
 function App() {
   const [cards, setCards] = useState([]);
-  const [turns, setTurns] = useState(0);
+  // const [turns, setTurns] = useState(0);
+  const [showTime, setShowTime] = useState(false)
+
+
 
   // shuffle cards
   const shufffleCards = () => {
@@ -23,16 +27,18 @@ function App() {
       .map((card) => ({ ...card, id: Math.random() }));
 
       setCards(shuffledCards)
-      setTurns(0)
+      // setTurns(0)
+      setShowTime(true)
   }
 
-  console.log(cards, turns)
-
+  // console.log(cards, turns)
   return (
     <div className="App">
       <h1>Astro Match</h1>
-      <button onClick={shufffleCards} >New Game</button>
+      <button onClick={shufffleCards} >New Game</button> 
 
+      {showTime && <Timer seconds={60} />}
+      
       <div className="card-grid">
           {cards.map((card) => (
             <SingleCard card={card} key={card.id} />
