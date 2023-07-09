@@ -14,10 +14,10 @@ const cardImages = [
 
 function App() {
   const [cards, setCards] = useState([]);
-  // const [turns, setTurns] = useState(0);
-  const [showTime, setShowTime] = useState(false)
-
-
+  const [turns, setTurns] = useState(0);
+  const [showTimer, setShowTimer] = useState(false)
+  const [choiceOne, setChoiceOne] = useState(null)
+  const [choiceTwo, setChoiceTwo] = useState(null)
 
   // shuffle cards
   const shufffleCards = () => {
@@ -27,21 +27,25 @@ function App() {
       .map((card) => ({ ...card, id: Math.random() }));
 
       setCards(shuffledCards)
-      // setTurns(0)
-      setShowTime(true)
+      setTurns(0)
+      setShowTimer(true)
   }
 
-  // console.log(cards, turns)
+  // handle a choice
+  const handleChoice = (card) => {
+     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
+  }
+
   return (
     <div className="App">
       <h1>Astro Match</h1>
       <button onClick={shufffleCards} >New Game</button> 
 
-      {showTime && <Timer seconds={60} />}
+      {showTimer && <Timer seconds={60} />}
       
       <div className="card-grid">
           {cards.map((card) => (
-            <SingleCard card={card} key={card.id} />
+            <SingleCard card={card} handleChoice={handleChoice} key={card.id} />
           ))}
       </div>
     </div>
