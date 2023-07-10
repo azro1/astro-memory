@@ -18,6 +18,7 @@ function App() {
   const [showTimer, setShowTimer] = useState(false)
   const [choiceOne, setChoiceOne] = useState(null)
   const [choiceTwo, setChoiceTwo] = useState(null)
+  const [disabled, setDisabled] = useState(false)
 
   // shuffle cards
   const shufffleCards = () => {
@@ -36,9 +37,11 @@ function App() {
      choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   }
 
-  // comparing choices using useEffect
+  // compare 2 selected cards using useEffect
   useEffect(() => {
     if (choiceOne && choiceTwo) {
+      // we want to disable flipping of cards temporarily until the check is completed and the 2 cards are compared
+      setDisabled(true)
 
       if (choiceOne.src === choiceTwo.src) {
         setCards(prevCards => {
@@ -64,6 +67,8 @@ function App() {
     setChoiceOne(null)
     setChoiceTwo(null)
     setTurns(prevTurns => prevTurns + 1)
+    // once comparison is done (whether cards match or whether cards do not match and are reset to initial values) we can then resume flipping cards
+    setDisabled(false)
   }
 
   // console.log(turns)
@@ -74,7 +79,7 @@ function App() {
       <h1>Astro Match</h1>
       <button onClick={shufffleCards}>New Game</button>
 
-      {showTimer && <Timer seconds={40} />}
+      {showTimer && <Timer seconds={60} />}
 
       <div className='card-grid'>
         {cards.map((card) => (
@@ -83,6 +88,8 @@ function App() {
             handleChoice={handleChoice}
             flipped={card === choiceOne || card === choiceTwo || card.matched}
             key={card.id}
+            // we pass the card a dynamic disabled prop
+            disabled={disabled}
           />
         ))}
       </div>

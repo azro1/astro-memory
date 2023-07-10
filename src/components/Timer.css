@@ -3,7 +3,11 @@
     font-weight: 400;
 }
 
-.timer .gameover, span {
+.timer .gameover {
     color: red;
     font-family: 'Boogaloo', sans-serif;
+}
+
+.danger {
+   color: red;
 }

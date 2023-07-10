@@ -21,7 +21,7 @@ const Timer = ({ seconds }) => {
 
   return (
     <div className="timer">
-      {time === 0 ? <h2 className="gameover">GAME OVER</h2> : <h2>Time: <span>{time}</span></h2>}
+      {time === 0 ? <h2 className="gameover">GAME OVER</h2> : <h2>Time: <span className={time <= 15 ? "danger" : ""}>{time}</span></h2>}
     </div>
   )
 }
