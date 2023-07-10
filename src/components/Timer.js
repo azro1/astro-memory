@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import './Timer.css'
 
-const Timer = ({ seconds }) => {
+const Timer = ({ seconds, endGame }) => {
   
   const [time, setTime] = useState(seconds)
   const timerId = useRef()
@@ -15,9 +15,10 @@ const Timer = ({ seconds }) => {
 
   useEffect(() => {
     if (time <= 0) {
+      endGame()
       clearInterval(timerId.current)
     }
-  }, [time])
+  }, [time, endGame])
 
   return (
     <div className="timer">

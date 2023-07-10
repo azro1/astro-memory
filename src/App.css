@@ -5,7 +5,7 @@
 }
 
 .App h1 {
-  font-family: 'Boogaloo';
+  font-family: 'Boogaloo', sans-serif;
   font-size: 3rem;
   margin: 1.25rem 0;
 }
@@ -23,7 +23,7 @@ button {
 }
 
 button:hover {
-  background: #FF69B4;
+  background: #0000CD;
   color: #fff;
 }
 
@@ -34,3 +34,21 @@ button:hover {
   margin: 1.50rem 0 0;
 }
 
+.App img {
+  width: 80%;
+}
+
+.App p {
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 1.4rem;
+}
+
+.App .freepik.credits {
+  margin: 0.625rem 0;
+}
+
+.App .freepik.credits span {
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 0.9rem;
+  padding: 0 5px;
+}
