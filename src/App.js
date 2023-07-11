@@ -80,7 +80,7 @@ function App() {
   }
 
   const startGame = useCallback(() => {
-    window.location.pathname = 'https://azro1.github.io/astro-memory'
+    window.location.pathname = './astro-memory'
   }, [])
 
   // useEffect will run at the very start and call shuffleCards function so cards will display but thereafter whenever its dependency value changes and that will be when the startGame function (above) is invoked and that is set to refresh the browser. So thereafter everytime New Game button is clicked - it will call startGame (which refreshes the page) but also will trigger useEffect (as it's a dependency to useEffect) to run which will call shuffleCards again and causing the component to be re-evaluated and updated with any new state changes
