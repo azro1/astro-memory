@@ -105,8 +105,8 @@ function App() {
       {!isPlaying && <Gameover src={gif} alt="game over image" />}
 
       {isPlaying && <div className="freepik credits">
-        <span>Image by <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658063.htm#query=purple%20cartoon%20space%20background&position=32&from_view=search&track=ais">Freepik</a></span> 
-        <span className="credit">Image by<a href="https://www.freepik.com/free-vector/cute-astronaut-dabbing-cartoon-icon-illustration-space-science-icon-isolated-flat-cartoon-style_13851647.htm#&position=1&from_view=collections">catalyststuff</a> on Freepik</span>
+        <p>Image by <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658063.htm#query=purple%20cartoon%20space%20background&position=32&from_view=search&track=ais">Freepik</a></p> 
+        <p className="credit">Image by <a href="https://www.freepik.com/free-vector/cute-astronaut-dabbing-cartoon-icon-illustration-space-science-icon-isolated-flat-cartoon-style_13851647.htm#&position=1&from_view=collections">catalyststuff</a> on Freepik</p>
       </div>}
     
       <p>Turns: {turns}</p> 

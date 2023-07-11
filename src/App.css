@@ -1,5 +1,5 @@
 .App {
-  max-width: 80%;
+  max-width: 90%;
   margin: 2.5rem 0;
   /* background: blue; */
 }
@@ -14,7 +14,7 @@ button {
   background: none;
   border: 0.125rem solid #fff;
   font-family: 'Kanit', sans-serif;
-  padding: 0.375rem 0.75rem;
+  padding: 0.575rem 0.75rem;
   border-radius: 0.25rem;
   color: #fff;
   font-weight: bold;
@@ -23,19 +23,20 @@ button {
 }
 
 button:hover {
-  background: #0000CD;
+  background: #FF69B4;
   color: #fff;
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.625rem;
+  grid-column-gap: 0.625rem;
+  grid-row-gap: 0.438rem;
   margin: 1.50rem 0 0;
 }
 
 .App img {
-  width: 80%;
+  width: 100%;
 }
 
 .App p {
@@ -47,10 +48,15 @@ button:hover {
   margin: 0.625rem 0;
 }
 
-.App .freepik.credits span {
+.App .freepik.credits p {
   font-family: 'Boogaloo', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0 0.313rem;
+  margin: 00.313rem;
+}
+
+.App .freepik.credits a {
+  color: #FF69B4;
 }
 
 
