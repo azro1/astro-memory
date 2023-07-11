@@ -10,7 +10,7 @@
   margin: 1.25rem 0;
 }
 
-button {
+.App button {
   background: none;
   border: 0.125rem solid #fff;
   font-family: 'Kanit', sans-serif;
@@ -22,12 +22,12 @@ button {
   font-size: 1rem;
 }
 
-button:hover {
+.App button:hover {
   background: #FF69B4;
   color: #fff;
 }
 
-.card-grid {
+.App .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0.625rem;
@@ -67,4 +67,15 @@ button:hover {
   .App h1 {
     font-size: 2.6rem; 
   }
+
+  .App button {
+    background: #FF69B4;
+  }
 }
+
+@media only screen and (max-width: 768px) {
+  .App .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
