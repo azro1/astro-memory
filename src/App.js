@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import gif from './giphy.gif';
 import './App.css';
 import SingleCard from './components/SingleCard';
@@ -79,16 +79,19 @@ function App() {
     setDisabled(false)
   }
 
-  // start a game automatically
-  useEffect(() => {
-    shufffleCards()
+  const startGame = useCallback(() => {
+    window.location.pathname = '/'
   }, [])
 
+  // useEffect will run at the very start and call shuffleCards function so cards will display but thereafter whenever its dependency value changes and that will be when the startGame function (above) is invoked and that is set to refresh the browser. So thereafter everytime New Game button is clicked - it will call startGame (which refreshes the page) but also will trigger useEffect (as it's a dependency to useEffect) to run which will call shuffleCards again and causing the component to be re-evaluated and updated with any new state changes
+  useEffect(() => {
+   shufffleCards()
+  }, [startGame])
 
   return (
     <div className='App'>
       <h1>Astro Match</h1>
-      <button onClick={shufffleCards}>New Game</button>
+      <button onClick={startGame}>New Game</button>
 
       {showTimer && <Timer seconds={60} endGame={endGame} />}
       {isPlaying && <div className='card-grid'>
