@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/astro-memory/static/css/main.56e73eb0.css",
-    "main.js": "/astro-memory/static/js/main.e54503ed.js",
+    "main.js": "/astro-memory/static/js/main.5bd991e8.js",
     "static/media/giphy.gif": "/astro-memory/static/media/giphy.2c0f56591e3805e84480.gif",
     "static/media/boogaloo-regular-webfont.woff": "/astro-memory/static/media/boogaloo-regular-webfont.cc2010b0bfcd11718ca1.woff",
     "static/media/kanit-regular-webfont.woff": "/astro-memory/static/media/kanit-regular-webfont.8d6a6744a33e56676556.woff",
@@ -9,10 +9,10 @@
     "static/media/kanit-regular-webfont.woff2": "/astro-memory/static/media/kanit-regular-webfont.d491052cc3c1724226eb.woff2",
     "index.html": "/astro-memory/index.html",
     "main.56e73eb0.css.map": "/astro-memory/static/css/main.56e73eb0.css.map",
-    "main.e54503ed.js.map": "/astro-memory/static/js/main.e54503ed.js.map"
+    "main.5bd991e8.js.map": "/astro-memory/static/js/main.5bd991e8.js.map"
   },
   "entrypoints": [
     "static/css/main.56e73eb0.css",
-    "static/js/main.e54503ed.js"
+    "static/js/main.5bd991e8.js"
   ]
 }
