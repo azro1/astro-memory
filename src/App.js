@@ -6,12 +6,12 @@ import Timer from './components/Timer';
 import Gameover from './components/Gameover';
  
 const cardImages = [
-  { src: '/images/astro1.png', matched: false },
-  { src: '/images/astro2.png', matched: false },
-  { src: '/images/astro3.png', matched: false },
-  { src: '/images/astro4.png', matched: false },
-  { src: '/images/astro5.png', matched: false },
-  { src: '/images/astro6.png', matched: false },
+  { src: './images/astro1.png', matched: false },
+  { src: './images/astro2.png', matched: false },
+  { src: './images/astro3.png', matched: false },
+  { src: './images/astro4.png', matched: false },
+  { src: './images/astro5.png', matched: false },
+  { src: './images/astro6.png', matched: false },
 ];
 
 function App() {
