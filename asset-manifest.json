@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df52ea0b.css",
+    "main.js": "/static/js/main.5239c538.js",
+    "static/media/giphy.gif": "/static/media/giphy.2c0f56591e3805e84480.gif",
+    "static/media/boogaloo-regular-webfont.woff": "/static/media/boogaloo-regular-webfont.cc2010b0bfcd11718ca1.woff",
+    "static/media/kanit-regular-webfont.woff": "/static/media/kanit-regular-webfont.8d6a6744a33e56676556.woff",
+    "static/media/boogaloo-regular-webfont.woff2": "/static/media/boogaloo-regular-webfont.04197334bb1ccefa3bdc.woff2",
+    "static/media/kanit-regular-webfont.woff2": "/static/media/kanit-regular-webfont.d491052cc3c1724226eb.woff2",
+    "index.html": "/index.html",
+    "main.df52ea0b.css.map": "/static/css/main.df52ea0b.css.map",
+    "main.5239c538.js.map": "/static/js/main.5239c538.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df52ea0b.css",
+    "static/js/main.5239c538.js"
+  ]
+}
