@@ -1,9 +1,10 @@
-import { useState, useEffect, useCallback } from 'react';
-import gif from './giphy.gif';
+import { useState, useEffect, useCallback, useRef } from 'react';
+import bender1 from './bender1.gif';
+import bender2 from './bender2.gif';
 import './App.css';
 import SingleCard from './components/SingleCard';
 import Timer from './components/Timer';
-import Gameover from './components/Gameover';
+import Result from './components/Result';
  
 const cardImages = [
   { src: './images/astro1.png', matched: false },
@@ -22,7 +23,13 @@ function App() {
   const [choiceTwo, setChoiceTwo] = useState(null)
   const [disabled, setDisabled] = useState(false)
   const [isPlaying, setIsPlaying] = useState(true)
+  const [length, setLength] = useState(0)
+  const grid = useRef()
 
+  // remove cards from dom if player finds all 6 matches
+  if (length === 6 && isPlaying) {
+    grid.current.innerHTML = ""
+  }
 
   // end the game
   const endGame = () => {
@@ -54,10 +61,11 @@ function App() {
     if (choiceOne && choiceTwo) {
       setDisabled(true)
 
-      if (choiceOne.src === choiceTwo.src) {
+      if (choiceOne.src === choiceTwo.src) {       
         setCards(prevCards => {
           return prevCards.map((card) => {
             if (card.src === choiceOne.src) {
+
               return {...card, matched: true}
             } else {
               return card
@@ -69,6 +77,15 @@ function App() {
         setTimeout(() => resetTurn(), 1000)
       }
     } 
+  }, [choiceOne, choiceTwo])
+ 
+  // fire useEffect to count everytime a match is found
+  useEffect(() => {
+    if(choiceOne && choiceTwo) {
+      if (choiceOne.src === choiceTwo.src) {
+        setLength(prevLength => prevLength + 1)
+      }
+    }
   }, [choiceOne, choiceTwo])
 
   // reset choices and increase turn
@@ -83,7 +100,6 @@ function App() {
     window.location.pathname = './astro-memory'
   }, [])
 
-  // useEffect will run at the very start and call shuffleCards function so cards will display but thereafter whenever its dependency value changes and that will be when the startGame function (above) is invoked and that is set to refresh the browser. So thereafter everytime New Game button is clicked - it will call startGame (which refreshes the page) but also will trigger useEffect (as it's a dependency to useEffect) to run which will call shuffleCards again and causing the component to be re-evaluated and updated with any new state changes
   useEffect(() => {
    shufffleCards()
   }, [startGame])
@@ -93,8 +109,8 @@ function App() {
       <h1>Astro Match</h1>
       <button onClick={startGame}>New Game</button>
 
-      {showTimer && <Timer seconds={60} endGame={endGame} />}
-      {isPlaying && <div className='card-grid'>
+      {showTimer && <Timer seconds={60} endGame={endGame} length={length} />}
+      {isPlaying && <div className='card-grid' ref={grid}>
         {cards.map((card) => (
           <SingleCard
             card={card}
@@ -105,11 +121,12 @@ function App() {
           />
         ))}
       </div>}
-      {!isPlaying && <Gameover src={gif} alt="game over image" />}
+      
+      {!isPlaying ? <Result src={bender2} alt="sad bender" /> : <Result src={bender1} alt="happy bender" length={length} /> }
 
       {isPlaying && <div className="freepik credits">
-        <p>Image by <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658063.htm#query=purple%20cartoon%20space%20background&position=32&from_view=search&track=ais">Freepik</a></p> 
-        <p className="credit">Image by <a href="https://www.freepik.com/free-vector/cute-astronaut-dabbing-cartoon-icon-illustration-space-science-icon-isolated-flat-cartoon-style_13851647.htm#&position=1&from_view=collections">catalyststuff</a> on Freepik</p>
+        <span>Image by <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658063.htm#query=purple%20cartoon%20space%20background&position=32&from_view=search&track=ais">Freepik</a></span> 
+        <span className="credit">Image by<a href="https://www.freepik.com/free-vector/cute-astronaut-dabbing-cartoon-icon-illustration-space-science-icon-isolated-flat-cartoon-style_13851647.htm#&position=1&from_view=collections">catalyststuff</a> on Freepik</span>
       </div>}
     
       <p>Turns: {turns}</p> 
@@ -118,6 +135,6 @@ function App() {
 }
 
 
-
-
 export default App;
+
+
