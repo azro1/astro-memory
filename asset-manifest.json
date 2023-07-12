@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/astro-memory/static/css/main.e2488f26.css",
-    "main.js": "/astro-memory/static/js/main.c905c08a.js",
-    "static/media/giphy.gif": "/astro-memory/static/media/giphy.2c0f56591e3805e84480.gif",
+    "main.css": "/astro-memory/static/css/main.9a39d5ce.css",
+    "main.js": "/astro-memory/static/js/main.58b93d65.js",
+    "static/media/bender2.gif": "/astro-memory/static/media/bender2.f68c8e571266707314e0.gif",
+    "static/media/bender1.gif": "/astro-memory/static/media/bender1.f22ac2bf602038b62a4a.gif",
     "static/media/boogaloo-regular-webfont.woff": "/astro-memory/static/media/boogaloo-regular-webfont.cc2010b0bfcd11718ca1.woff",
     "static/media/kanit-regular-webfont.woff": "/astro-memory/static/media/kanit-regular-webfont.8d6a6744a33e56676556.woff",
     "static/media/boogaloo-regular-webfont.woff2": "/astro-memory/static/media/boogaloo-regular-webfont.04197334bb1ccefa3bdc.woff2",
     "static/media/kanit-regular-webfont.woff2": "/astro-memory/static/media/kanit-regular-webfont.d491052cc3c1724226eb.woff2",
     "index.html": "/astro-memory/index.html",
-    "main.e2488f26.css.map": "/astro-memory/static/css/main.e2488f26.css.map",
-    "main.c905c08a.js.map": "/astro-memory/static/js/main.c905c08a.js.map"
+    "main.9a39d5ce.css.map": "/astro-memory/static/css/main.9a39d5ce.css.map",
+    "main.58b93d65.js.map": "/astro-memory/static/js/main.58b93d65.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2488f26.css",
-    "static/js/main.c905c08a.js"
+    "static/css/main.9a39d5ce.css",
+    "static/js/main.58b93d65.js"
   ]
 }
