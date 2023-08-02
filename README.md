@@ -1,4 +1,4 @@
-# Astro Memory
+# Astro Match
 
 <img src="astro-memory.png" alt="picture of a memory game" />
 
