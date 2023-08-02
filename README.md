@@ -4,4 +4,4 @@
 
 ## React js Memory Game
 
-You have 2 truns per try and 60 seconds to find the corresponding astronaugt match - if you find all matches within the time frame you win - if not you lose!
+You have 2 truns per try and 60 seconds to find the corresponding astronaut match - if you find all matches within the time frame you win - if not you lose!
