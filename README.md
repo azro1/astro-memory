@@ -1,6 +1,4 @@
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-
 # Astro Match 👾
 
 ## React js Memory Game
@@ -40,8 +38,7 @@ to run this project you need the following:
 
 
 
-```bash
-cdfndcdmvfmdfmdnvfndn
+
   
 
 
