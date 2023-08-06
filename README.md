@@ -20,25 +20,34 @@ You have 2 truns per try and 60 seconds to find the corresponding astronaut matc
 
 ### Prerequisites
 
-to run this project you need the following:
+to run this project you need to install the following:
 
 1. [Git](https://git-scm.com/)
-2. [Node.js](https://nodejs.org/en)
+2. [Node.js](https://nodejs.org/en) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (if using nvm make sure you don't have any versions of node installed and be sure to install the version of node you want to use prior to cloning this repo)
 3. Any text editor 
 
 ## Setup
 
-1. <code>mkdir</code> - create a folder
-2. <code>cd</code> - change directory
-3. <code>git init</code> - initialize a local git repo
-4. run this command:
+1. Open a terminal
+2. Find a suitable location on your pc
+3. Run <code>mkdir</code> - to create a folder
+4. Use <code>cd</code> - to change directory into folder
+5. Run <code>git init</code> - to initialize a local git repo
+6. Run command:
 ```
-git clone 
+git clone https://github.com/azro1/astro-memory.git
 ```
-6. <code>npm install</code> - install project dependencies
-7. <code>npm start</code> - start dev server
+6. Run <code>code .</code> to open folder in text editor
+7. Use <code>cd</code> - to change directory into the cloned project folder
+8. Run <code>npm install</code> - to install the project dependencies
+9. Remove the "homepage" url inside of package.json and save the file
+10. Run <code>npm start</code> - to start the dev server
 
+## Contributing
 
+## Show Support
+
+## License
 
 
 
