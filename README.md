@@ -1,4 +1,3 @@
-
 # Astro Match 👾
 
 ## React js Memory Game
@@ -23,23 +22,24 @@ You have 2 truns per try and 60 seconds to find the corresponding astronaut matc
 
 to run this project you need the following:
 
-1. Git
-2. Node js
+1. [Git](https://git-scm.com/)
+2. [Node.js](https://nodejs.org/en)
 3. Any text editor 
 
 ## Setup
 
-1. <code>mkdir</code> - create folder
+1. <code>mkdir</code> - create a folder
 2. <code>cd</code> - change directory
-3. <code>git init</code> - create local git repo
-4. <code>git clone</code> - clone the repo
-5. <code>npm install</code> - install dependencies
-6. <code>npm start</code> - start dev server
+3. <code>git init</code> - initialize a local git repo
+4. run this command:
+```
+git clone 
+```
+6. <code>npm install</code> - install project dependencies
+7. <code>npm start</code> - start dev server
 
 
 
-
-  
 
 
 
