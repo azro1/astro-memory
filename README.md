@@ -6,6 +6,6 @@ You have 2 truns per try and 60 seconds to find the corresponding astronaut matc
 
 ## Tech Stack
 
-*Html
-*Css
-*React
+* Html
+  Css
+  React
