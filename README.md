@@ -44,6 +44,11 @@ git clone https://github.com/azro1/astro-memory.git
 9. Remove the "homepage" url inside of package.json and save the file
 10. <code>npm start</code> - to start the dev server
 
+
+## Usage
+
+This project is broken up into lesson branches. You can access each individual lesson by its number. There are 12 in total. If you want to download a specific lesson just select the branch and either download the zip or clone it to you computer.
+
 ## 🔨 Contributing
 
 ## ⭐ Show Support
