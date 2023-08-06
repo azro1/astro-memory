@@ -44,7 +44,7 @@ git clone https://github.com/azro1/astro-memory.git
 9. Remove the "homepage" url inside of package.json and save the file
 10. <code>npm start</code> - to start the dev server
 
-## 🔧 Contributing
+## 🔨 Contributing
 
 ## ⭐ Show Support
 
