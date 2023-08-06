@@ -25,7 +25,9 @@ to run this project you need the following:
 
 1. Git 
 2. Node js
-3. Any text editor
+3. Any text editor 
+
+## Setup
 
 
 
