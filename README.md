@@ -34,7 +34,7 @@ to run this project you need to install the following:
 4. <code>cd</code> - to change directory into folder
 5. <code>git init</code> - to initialize a local git repo
 
-to clone this repo run the following command:
+to clone the repo run the following command:
 ```
 git clone https://github.com/azro1/astro-memory.git
 ```
