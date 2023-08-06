@@ -29,5 +29,8 @@ to run this project you need the following:
 
 ## Setup
 
+1. Create a folder on your pc
+2. cd into folder
+3. run git clone 
 
 
