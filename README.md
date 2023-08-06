@@ -10,7 +10,7 @@ You have 2 truns per try and 60 seconds to find the corresponding astronaut matc
   Css
   React
 
-<details>
+<details open>
 <summary>Want to ruin the surprise?</summary>
 <br>
 Well, you asked for it!
