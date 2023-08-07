@@ -58,7 +58,7 @@ This project is broken up into lesson branches. To access the lessons click on t
 * Fork the repo and create a new branch for any issue that you are working on
 * Create a pull request and add screenshots for review
 
-Please refer to the [Contribution Guidelines](CONTRIBUTING.md)
+please refer to the [Contribution Guidelines](CONTRIBUTING.md)
   
 
 ## ❤️ Show Support
