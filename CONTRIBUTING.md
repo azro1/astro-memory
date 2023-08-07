@@ -1,17 +1,12 @@
 # 🔧 Contributors Guide 🔨
-## Welcome to my open source project 😳
+## ✨Welcome to my open source project💫 😳
 
-### We're thrilled that you're interested in contributing to Astro Match. This document is your starting point to understand how you can get involved and make a positive impact.
+### I'm thrilled that you're interested in contributing to astro-memory. This document is your starting point to understand how you can get involved and make a positive impact.
 
 <br>
-Whether you're a developer, designer, tester, or enthusiast, there's a place for you to contribute and help us grow. Your ideas and efforts can shape the future of this project.
-<br><br>
-Read on to learn how you can contribute, whether it's through code, documentation, bug reports, or simply sharing your thoughts. We believe that every contribution counts, no matter how big or small.
+Read on to learn how you can contribute, whether it's through code, documentation, bug reports, or simply sharing your thoughts. I believe that every contribution counts, no matter how big or small. Thank you for being a part of astro-memory's journey!
 
-Thank you for being a part of Astro Match's journey!
-<br><br>
-
-# Create your first Pull Request
+# 💥Create your first Pull Request💥
 
 1. Open a terminal
 2. <code>cd</code> into your desktop
@@ -54,5 +49,7 @@ git push origin name-of-branch
 17. Add a title and description to your PR discribing your changes along with any Screenshots
 18. Click on <code>Create pull request</code>
 
+### Congratulations🎈 you've made your first PR to astro-memory!!
 
+Now, just sit tight and wait for your request to be reviewed and accepted by a maintainer - thank you so much for your contribution 😃
 
