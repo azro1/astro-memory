@@ -56,6 +56,6 @@ This project is broken up into lesson branches. To access the lessons click on t
 If you like this project please star it to show your support!
 
 ## 📄	License
-
+This project is licensed under the [MIT](LICENSE) License
 
 
