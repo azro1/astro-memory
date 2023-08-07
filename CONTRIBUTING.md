@@ -1,9 +1,16 @@
 # 🔧 Contributors Guide 🔨
 
-1. Create a new folder on your desktop
-2. Open the folder in your text editor
-3. Fork repo to your GitHub account
-6. In your text editor <code>clone</code> repo into the folder:
+1. Open a terminal
+2. <code>cd</code> into your desktop
+3. Create a folder
+4. <code>cd</code> into folder
+5. Open folder in text editor:
+```
+code .
+```
+7. Open terminal in text editor
+8. Fork repo to your GitHub account
+9. In text editor <code>clone</code> repo into folder:
 ```
 git clone https://github.com/your-github-username/astro-memory.git
 ```
