@@ -49,9 +49,6 @@ git push origin name-of-branch
 17. Add a title and description to your PR discribing your changes along with any Screenshots
 18. Click on <code>Create pull request</code>
 
-<br>
-<br>
-
 ### Congratulations🎈 you've made your first PR to astro-memory!!
 
 Just sit tight and wait for your request to be reviewed and accepted by a maintainer.. if you have any questions please let me know in the comments. 
