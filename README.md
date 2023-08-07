@@ -51,9 +51,19 @@ This project is broken up into lesson branches. To access the lessons click on t
 
 ## 🔨 Contributing
 
-## ⭐ Show Support
+### Contributions, Features and Issue request are welcome 😃
 
-If you like this project please star it to show your support!
+* Feel free to check out the issues tab or create your own issue
+* Wait for the issue to be assigned to you - once assigned you can start work on the issue
+* Fork the repo and create a new branch for any issue that you are working on
+* Create a pull request and add screenshots for review
+
+check the [Contribution Guidelines](CONTRIBUTING.md) for more detailed instructions
+  
+
+## ❤️ Show Support
+
+Show your support by giving a ⭐ to this repo
 
 ## 📄	License
 This project is licensed under the [MIT](LICENSE) License
