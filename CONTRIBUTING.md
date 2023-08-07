@@ -7,7 +7,6 @@
 Read on to learn how you can contribute, whether it's through code, documentation, bug reports, or simply sharing your thoughts. I believe that every contribution counts, no matter how big or small. Thank you for being a part of astro-memory's journey!
 <br> 
 <br>
-<br>
 
 
 # 💥Create your first Pull Request💥
@@ -52,9 +51,9 @@ git push origin name-of-branch
 16. In your GitHub account click on <code>Compare & pull request</code>
 17. Add a title and description to your PR discribing your changes along with any Screenshots
 18. Click on <code>Create pull request</code>
-<br> 
-<br> 
 
+<br>
+<br>
 
 ### Congratulations🎈 you've made your first PR to astro-memory!!
 
@@ -63,7 +62,6 @@ Just sit tight and wait for your request to be reviewed and accepted by a mainta
 Your contribution means a lot – thank you! 😃
 
 
-<br> <br>
 # Our Commitment to a Respectful Community 😇
 
 Please maintain our project's code of conduct whilst contributing.
@@ -71,10 +69,7 @@ Please maintain our project's code of conduct whilst contributing.
 We are committed to fostering an inclusive and respectful environment where all contributors feel safe and empowered to collaborate. Discrimination, harassment, and disrespectful behavior have no place here. Let's work together to create a positive space where diverse perspectives are celebrated, and everyone can contribute effectively.
 
 
-<br> <br>
 # License 📄
 
 By making contributions to astro-match, you acknowledge and agree to the terms of the [MIT](LICENSE). This license governs the use, modification, and distribution of your contributions and the project as a whole. Please review the full license document before submitting any contributions.
-
-<br> <br>
 
