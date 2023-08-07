@@ -1,4 +1,17 @@
 # 🔧 Contributors Guide 🔨
+## Welcome to my open source project 😳
+
+### We're thrilled that you're interested in contributing to Astro Match. This document is your starting point to understand how you can get involved and make a positive impact.
+
+<br>
+Whether you're a developer, designer, tester, or enthusiast, there's a place for you to contribute and help us grow. Your ideas and efforts can shape the future of this project.
+<br><br>
+Read on to learn how you can contribute, whether it's through code, documentation, bug reports, or simply sharing your thoughts. We believe that every contribution counts, no matter how big or small.
+
+Thank you for being a part of Astro Match's journey!
+<br><br>
+
+# Create your first Pull Request
 
 1. Open a terminal
 2. <code>cd</code> into your desktop
@@ -8,42 +21,38 @@
 ```
 code .
 ```
-7. Open terminal in text editor
-8. Fork repo to your GitHub account
-9. In text editor <code>clone</code> repo into folder:
+6. Open terminal in text editor
+7. Fork repo to your GitHub account
+8. In text editor <code>clone</code> repo into folder:
 ```
 git clone https://github.com/your-github-username/astro-memory.git
 ```
-6. <code>cd</code> into the project directory 
+9. <code>cd</code> into the project directory 
 ```
 cd astro-memory
 ```
-7. Add local alias for remote repo:
-```
-git remote add origin https://github.com/azro1/astro-memory.git
-```
-8. Check alias has been added:
-```
-git remote -v
-```
-9. Make your changes to the source code
-10. Save your changes
-11. Create a new branch
+
+10. Make your changes to the source code
+11. Save your changes
+12. Create a new branch
 ```
 git checkout -b name-of-branch
 ```
-10. Stage your changes
+13. Stage your changes
 ```
 git add .
 ```
-10. Commit your changes
+14. Commit your changes
 ```
 git commit -m "your-commit-message"
 ```
-11. Push your changes to remote repo:
+15. Push your changes to remote repo:
 ```
 git push origin name-of-branch
 ```
-15. In your GitHub account click on <code>Compare & pull request</code>
+16. In your GitHub account click on <code>Compare & pull request</code>
+17. Add a title and description to your PR discribing your changes along with any Screenshots
+18. Click on <code>Create pull request</code>
+
 
 
