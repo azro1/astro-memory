@@ -5,9 +5,6 @@
 
 <br>
 Read on to learn how you can contribute, whether it's through code, documentation, bug reports, or simply sharing your thoughts. I believe that every contribution counts, no matter how big or small. Thank you for being a part of astro-memory's journey!
-<br> 
-<br>
-
 
 # 💥Create your first Pull Request💥
 
@@ -60,7 +57,6 @@ git push origin name-of-branch
 Just sit tight and wait for your request to be reviewed and accepted by a maintainer.. if you have any questions please let me know in the comments. 
 
 Your contribution means a lot – thank you! 😃
-
 
 # Our Commitment to a Respectful Community 😇
 
