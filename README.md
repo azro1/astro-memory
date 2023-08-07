@@ -49,7 +49,7 @@ git clone https://github.com/azro1/astro-memory.git
 
 This project is broken up into lesson branches. To access the lessons click on the branch dropdown. If you want to download the code for a specific lesson just select the branch and either download the zip or clone it to you computer.
 
-## 🔨 Contributing
+## Contributing 🔨
 
 ### Contributions, Features and Issue request are welcome 😃
 
@@ -61,7 +61,7 @@ This project is broken up into lesson branches. To access the lessons click on t
 please refer to the [Contribution Guidelines](CONTRIBUTING.md)
   
 
-## ❤️ Show Support
+## Show Support ❤️ 
 
 Show your support by giving a ⭐ to this repo
 
