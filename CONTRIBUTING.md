@@ -3,7 +3,7 @@
 1. Open a terminal
 2. <code>cd</code> into your desktop
 3. Create a folder
-4. <code>cd</code> into folder
+4. <code>cd</code> into the folder
 5. Open folder in text editor:
 ```
 code .
@@ -14,13 +14,21 @@ code .
 ```
 git clone https://github.com/your-github-username/astro-memory.git
 ```
-6. <code>cd</code> into repo
-7. Create a new branch
+6. <code>cd</code> into the project directory 
+```
+cd astro-memory
+```
+7. Add an alias for the remote repo:
+```
+git remote add origin 
+```
+8. Make your changes to the source code
+9. Save your changes
+10. Create a new branch
 ```
 git checkout -b name-of-branch
 ```
-8. Make your changes to the source code
-9. Stage your changes
+10. Stage your changes
 ```
 git add .
 ```
