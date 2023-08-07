@@ -22,7 +22,7 @@ You have 2 truns per try and 60 seconds to find the corresponding astronaut matc
 
 to run this project you need to install the following:
 
-1. Any cli: command prompt, [Git Bash](https://gitforwindows.org/) or [Cmder](https://cmder.app/)(which comes with git installed)
+1. Any cli - command prompt, [Git Bash](https://gitforwindows.org/) or [Cmder](https://cmder.app/)(which comes with git installed)
 2. [Git](https://git-scm.com/)
 3. [Node.js](https://nodejs.org/en) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (if using nvm make sure you don't have any versions of node installed and be sure to install the version of node you want to use prior to cloning this repo)
 4. Any text editor 
