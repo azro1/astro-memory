@@ -52,4 +52,5 @@ git push origin name-of-branch
 ### Congratulations🎈 you've made your first PR to astro-memory!!
 
 Now, just sit tight and wait for your request to be reviewed and accepted by a maintainer - thank you so much for your contribution 😃
+If you have any questions please let me know in the comments.
 
