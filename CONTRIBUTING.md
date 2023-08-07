@@ -18,13 +18,17 @@ git clone https://github.com/your-github-username/astro-memory.git
 ```
 cd astro-memory
 ```
-7. Add an alias for the remote repo:
+7. Add local alias for remote repo:
 ```
-git remote add origin 
+git remote add origin https://github.com/azro1/astro-memory.git
 ```
-8. Make your changes to the source code
-9. Save your changes
-10. Create a new branch
+8. Check alias has been added:
+```
+git remote -v
+```
+9. Make your changes to the source code
+10. Save your changes
+11. Create a new branch
 ```
 git checkout -b name-of-branch
 ```
