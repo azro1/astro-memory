@@ -108,7 +108,6 @@ function App() {
     <div className='App'>
       <h1>Astro Match</h1>
       <button onClick={startGame}>New Game</button>
-
       {showTimer && <Timer seconds={60} endGame={endGame} length={length} />}
       {isPlaying && <div className='card-grid' ref={grid}>
         {cards.map((card) => (

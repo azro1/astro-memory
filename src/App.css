@@ -23,7 +23,7 @@
 }
 
 .App button:hover {
-  background: #FF69B4;
+  background:#0047AB;
   color: #fff;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .App .freepik.credits a {
-  color: #FF69B4;
+  color:#778899;
 }
 
 
@@ -65,7 +65,7 @@
   }
 
   .App button {
-    background: #FF69B4;
+    background:#0047AB;
   }
 }
 
