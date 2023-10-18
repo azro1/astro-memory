@@ -120,16 +120,11 @@ function App() {
           />
         ))}
       </div>}
-      
       {!isPlaying ? <Result src={bender2} alt="sad bender" /> : <Result src={bender1} alt="happy bender" length={length} /> }
-
       {isPlaying && <div className="freepik credits">
         <p>Image by <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14658063.htm#query=purple%20cartoon%20space%20background&position=32&from_view=search&track=ais">Freepik</a></p> 
         <p className="credit">Image by <a href="https://www.freepik.com/free-vector/isolated-space-background-scene_5022134.htm?query=cartoon%20space%20background#from_view=detail_alsolike#position=0&query=cartoon+space+background">brgfx</a> on Freepik</p>
       </div>}
-
-
-    
       <p>Turns: {turns}</p> 
     </div>
   );
